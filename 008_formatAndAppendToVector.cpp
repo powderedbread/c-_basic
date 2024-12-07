@@ -38,7 +38,7 @@ int main() {
     printf("Entry 2: %d \n", theDataFormatted[1]);  
     cout << "Entry 3 is: "<< theDataFormatted[2] << endl;
 
-    average = sum / theDataFormatted.size();
+    average = (double)sum / theDataFormatted.size();
     printf("Out of %d elephant seals, the average weight is: %.3lf", (int)theDataFormatted.size(), average);
  
     return 0;
