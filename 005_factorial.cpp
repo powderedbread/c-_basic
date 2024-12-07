@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-
+//works up to 16
  int main(void)
 {
      int var = 0;
@@ -12,7 +12,7 @@
      for (int i = 1; i <= var; i++)
         f = f * i;
 
-    printf("Factorial of %d is %d\n", var, f);  
+    printf("Factorial of %d is %ld\n", var, f);  
 
     return 0;  
 }
