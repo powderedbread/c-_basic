@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
  int main(void)
 {
      int var = 0;
@@ -10,8 +11,8 @@
      //start f at 1 not zero, and multiply by +1 until var is reached.
      for (int i = 1; i <= var; i++)
         f = f * i;
-  
-    printf("Factorial of %d is %ld\n", var, f);  
+
+    printf("Factorial of %d is %d\n", var, f);  
 
     return 0;  
 }
