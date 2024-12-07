@@ -8,12 +8,13 @@
 using namespace std;
 
 int main() {
-    char theData[] = "5713   6936   4534  8764   3432  3433";
+    char theData[] = "5713   6936   4534  8764   3432  3433 233 2343  12";
 
     int length = sizeof(theData);
-    string entry = "";  //used to add chars until a space is reached
+    string entry = "";              //used to add chars until a space is reached
     vector<int> theDataFormatted;  // use vector instead an array to use "dynamic" size
     long int sum= 0;
+    double average;
 
     for (int i = 0; i < length; i++)
     {
@@ -33,10 +34,12 @@ int main() {
         }
 
     }
-    // Print the result (the second number, for example)
-    cout << "first number:  " << theDataFormatted[0] << endl;
-    cout << "second number:  " << theDataFormatted[1] << endl;
-    cout << "fifth number:  " << theDataFormatted[4] << endl;
-    cout << "sum is: " << sum;
+    //example of printing new formatted entry
+    printf("Entry 2: %d \n", theDataFormatted[1]);  
+    cout << "Entry 3 is: "<< theDataFormatted[2] << endl;
+
+    average = sum / theDataFormatted.size();
+    printf("Out of %d elephant seals, the average weight is: %.3lf", (int)theDataFormatted.size(), average);
+ 
     return 0;
 }
